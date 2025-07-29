@@ -14,6 +14,7 @@ Bu uygulama, çalışabilmek için `data.db` adında bir veritabanı dosyasını
 
 3. **Kullanım:**  
    - İşlenmiş (düzenli) veri, sadece uygulama çalıştıktan sonra oluşur ve sistem içinde kullanılır.
+   - Uygulamayı `kivy_app.py` dosyasından çalıştırabilirsiniz.
 
 ### ⚠️ Önemli Not
 
