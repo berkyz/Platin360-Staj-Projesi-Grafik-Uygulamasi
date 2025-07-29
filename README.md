@@ -1,28 +1,23 @@
-## 📂 Veri Yapısı ve Kullanımı
+## 📂 Veri Yapısı ve `data.db` Gereksinimi
 
-Bu Kivy uygulaması `data.db` adlı bir veritabanı dosyası ile çalışmaktadır.
+Bu uygulama, çalışabilmek için `data.db` adında bir veritabanı dosyasını yüklemelidir.
 
 ### 🔄 Veri İşleme Süreci
 
-1. **Veri Yükleme:**  
-   Uygulama çalıştırıldığında, belirtilen klasörde bulunan ham veriler otomatik olarak yüklenir.
+1. **Veri Girişi:**  
+   - Uygulama yalnızca `data.db` formatındaki veri dosyasını kabul eder.
+   - Başka formatlardaki veriler (ör. `.csv`, `.json`) doğrudan kullanılamaz.
 
 2. **Veri Dönüştürme:**  
-   Ham veriler uygulama tarafından **düzenli bir formata dönüştürülür**. Bu işlem sırasında:
-   - Veriler temizlenir,
-   - Gerekli alanlara ayrılır,
-   - Uyumlu hale getirilir.
+   - Uygulama çalıştığında, `data.db` içindeki ham veriyi işler.
+   - Veriler uygulama içinde **temizlenir**, **düzenlenir** ve **kullanıma hazır hale getirilir**.
 
-3. **Veritabanı Oluşturma:**  
-   Düzenlenmiş veriler `data.db` adlı bir SQLite veritabanı dosyasına kaydedilir.  
-   Bu dosya uygulama tarafından veri kaynağı olarak kullanılır.
+3. **Kullanım:**  
+   - İşlenmiş (düzenli) veri, sadece uygulama çalıştıktan sonra oluşur ve sistem içinde kullanılır.
 
-### 📁 data.db Nerededir?
+### ⚠️ Önemli Not
 
-- Varsayılan olarak proje klasörünün kök dizininde bulunur.
-- Veritabanı silinirse veya eksikse, uygulama çalışmayabilir.
-
-### 💡 Not:
-
-Veritabanı dosyası `duzenli_data.db` oluşturulmadan önce uygulama düzgün çalışmaz. İlk kez çalıştırmadan önce verilerin hazır olduğundan emin olun.
+- Uygulama başlamadan önce, `data.db` dosyasının mevcut olması gerekir.
+- Eğer `data.db` yoksa veya hatalıysa, uygulama düzgün çalışmayacaktır.
+- Uygulama, veriyi kendisi düzenler ancak **veri kaynağı olarak mutlaka bir `data.db` dosyası gereklidir**.
 
