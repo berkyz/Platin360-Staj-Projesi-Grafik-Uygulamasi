@@ -1,0 +1,14 @@
+dash==3.1.1
+Flask==3.1.1
+geopandas==1.0.1
+Kivy==2.3.1
+matplotlib==3.10.3
+mplcursors==0.6
+pandas==2.3.1
+plotly==6.2.0
+psutil==7.0.0
+pycountry==24.6.1
+Requests==2.32.4
+seaborn==0.13.2
+SQLAlchemy==2.0.39
+user_agents==2.2.0
