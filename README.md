@@ -17,7 +17,7 @@ Bu uygulama, çalışabilmek için `data.db` adında bir veritabanı dosyasını
 
 ### ⚠️ Önemli Not
 
-- Uygulama başlamadan önce, `data.db` dosyasının mevcut olması gerekir.
-- Eğer `data.db` yoksa veya hatalıysa, uygulama düzgün çalışmayacaktır.
-- Uygulama, veriyi kendisi düzenler ancak **veri kaynağı olarak mutlaka bir `data.db` dosyası gereklidir**.
+- Uygulama başlamadan önce, `duzenli_data.db` dosyasının mevcut olması gerekir.
+- Eğer `duzenli_data.db` yoksa veya hatalıysa, uygulama düzgün çalışmayacaktır.
+- Uygulama, `data.db` dosyası yüklendikten sonra veriyi kendisi düzenler ve `duzenli_data.db` dosyası oluşturur ancak **veri kaynağı olarak mutlaka bir `data.db` (staj_uygulaması/data.db) dosyası ile aynı formatta bir dosya yüklenmesi gereklidir**.
 
